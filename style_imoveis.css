@@ -1,0 +1,243 @@
+/* Feito por: Jaqueline Mesquita */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #FAFAFA;
+  }
+  
+  header {
+    background-color: #A5B3AA;
+    padding: 20px;
+  }
+  
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imov {
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Arial;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .easy {
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: Inria Serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  nav {
+    background-color: #FAFAFA;
+    padding: 10px 20px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    display: inline;
+  }
+  
+  .menu li a {
+    color: #4E3F30;
+    text-decoration: none;
+  }
+
+
+  .divisoria {
+    color: #4E6B66;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 11px;
+  }
+  
+  .linha {
+    background: #4E6B66;
+    width: 888.095px;
+    height: 1px;
+    margin-top: 11px;
+  }
+
+  .catalogo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .catalogo-item {
+    margin: 10px;
+  }
+  
+  .produto-background {
+    border-radius: 10px;
+    background: #A5B3AA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .apartamento-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .nome-propriedade {
+    width: 154px;
+    height: 18.046px;
+    flex-shrink: 0;
+    color: #000000;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+  
+  .endereco-propriedade {
+    width: 147px;
+    height: 38.098px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+  }
+  
+  .preco-propriedade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .real {
+    width: 21px;
+    height: 18.046px;
+    color: #000;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .valor {
+    width: 105px;
+    height: 46px;
+    flex-shrink: 0;
+    color: #4E6B66;
+    font-family: Arial;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .taxas {
+    width: 53px;
+    height: 18.046px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .avaliacao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .estrelinha {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .rodape {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .rodape h2 {
+    color: #4E6B66;
+    font-family: Arial;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  footer {
+    background-color: #A5B3AA;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .texto-rodape {
+    color: #000;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  /* Feito por: Jaqueline Mesquita */
+  @media (max-width: 768px) {
+    .catalogo-container {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalogo-item {
+      margin-right: 0;
+    }
+  }
+  
+  /* Feito por: Jaqueline Mesquita */
+  
