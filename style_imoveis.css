@@ -69,9 +69,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-align: center;
+    text-align: left;
     margin-top: 65px;
     margin-bottom: 11px;
+    margin-left: 100px;
   }
   
   .linha {
@@ -84,13 +85,14 @@
   .catalogo-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    justify-content: flex-start;
+    max-width: 1000px;
   }
+  
   
   .catalogo-item {
     margin: 10px;
+    margin-left: 100px;
   }
   
   .produto-background {
@@ -103,7 +105,7 @@
     padding: 20px;
   }
   
-  .apartamento-img {
+  .comercial-img {
     width: 100%;
     height: auto;
   }
@@ -196,6 +198,14 @@
     height: 20px;
     margin-right: 5px;
   }
+
+  .filtro {
+    width: 360px;
+    height: 743px;
+    position: absolute;
+    top: 342px;
+    right: 86px;
+}
 
   .rodape {
     text-align: center;
