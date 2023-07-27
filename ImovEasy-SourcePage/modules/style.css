@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: #FEFEEB;
+}
+
+.container {
+    position: relative;
+    background-image: url(../assets/O\ seu\ sonho\ na\ palma\ da\ sua\ mão!\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 119%;
+    width: 100%;
+    height: 119%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px;
+
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A5B3AA;
+    height: 93px;
+
+}
+
+#logo_1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 64px;
+
+}
+
+#logo_2 {
+    font-family: 'Inria Serif', serif;
+    font-weight: normal;
+    color: #FEFEEB;
+    font-size: 64px;
+
+}
+
+label {
+    font-family: 'Inria Serif', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 8px;
+}
+
+h2 {
+    font-family: 'Inria Serif', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    color: #4E6B66;
+    justify-content: center;
+    display: flex;
+}
+.menu{
+    position: relative;
+    width: auto;
+    height: 40px;
+    margin: 10px 10px 0 40px;
+    height: 80px;
+    background-color: #FEFEEB;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#menu-toggle{
+    display: none;
+}
+
+nav {
+    width: 90%;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: #4E3F30;
+    margin-top: -5px;
+    
+
+}
+
+li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #4E3F30;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.form1 {
+    background-color: #A5B3AA;
+    width: 380px;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.form2 {
+    position: relative;
+    background-color: #A5B3AA;
+    width: 455px;
+    height: 810px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 2rem;
+    justify-content: space-evenly;
+
+}
+
+
+.caixa1 {
+    border: none;
+    width: 322px;
+    height: 42px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.caixa2 {
+    border: none;
+    width: 385.77px;
+    height: 42px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imgcadastro {
+    width: 161px;
+    height: 150px;
+    margin: 0px 28%;
+    justify-content: center;
+    display: block;
+
+}
+
+#botão1 {
+    width: 91px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4E6B66;
+    color: #FFFFFF;
+    font-family: 'Inria Serif', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+#botão2 {
+    width: 142px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4E6B66;
+    color: #FFFFFF;
+    font-family: 'Inria Serif', serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-left: 30%;
+   margin-top: 35px;
+}
+
+footer {
+    background-color: #A5B3AA;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 26px;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    width: 291px;
+    height: 18px;
+    color: black;
+    margin: auto;
+}
+
+.line-center {
+    height: 619px;
+    width: 0px;
+    border-left: solid 0.1px #4E6B66;
+}

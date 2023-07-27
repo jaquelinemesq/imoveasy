@@ -1,0 +1,198 @@
+@media (max-width: 1200px) {
+
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-repeat: repeat;
+    }
+
+    .line-center {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        margin-top: 10px;
+        margin-left: -15px;
+        background-color: #FFFFFF;
+
+    }
+
+    nav ul {
+        position: relative;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        position: relative;
+        width: auto;
+        height: 40px;
+        margin: 15px 0px 0 10px;
+        height: 60px;
+        background-color: #FEFEEB;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        font-size: 24px;
+        /* Tamanho do ícone */
+        cursor: pointer;
+        /* Altera o cursor para indicar que é clicável */
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu-toggle:checked~#menu {
+        display: block;
+        text-decoration: none;
+    }
+
+    #icon-menu {
+        color: #000;
+        margin: 5px 5px;
+
+        
+        }
+
+    ul {
+        background-color: #fff;
+        list-style: none;
+        padding: 10px;
+        z-index: 2;
+        border: solid 1px #626262;
+        border-radius: 2rem;
+        box-shadow: 0 4px 6px rgba(55, 53, 53, 0.357);
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+   .cadastro{
+    margin-top: 60px;
+   }
+
+}
+
+@media (max-width: 450px) {
+    
+    .menu {
+        position: relative;
+        width: auto;
+        height: 40px;
+        margin: 15px 0px 0 10px;
+
+    }
+
+
+    .form1 {
+        background-color: #A5B3AA;
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 1rem;
+        justify-content: space-evenly;
+        position: relative;
+    
+    }
+    
+    .form2 {
+        position: relative;
+        background-color: #A5B3AA;
+        width: 300px;
+        height: 650px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 1rem;
+        justify-content: space-evenly;
+    
+    }
+    .caixa1 {
+        border: none;
+        width: 270px;
+        height: 35px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .caixa2 {
+        border: none;
+        width: 270px;
+        height: 35px;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .imgcadastro {
+        width: 150px;
+        height: 140px;
+        margin: 0px 23%;
+        justify-content: center;
+        display: block;
+    
+    }
+    #botão2 {
+        width: 142px;
+        height: 42px;
+        border-radius: 10px;
+        border: none;
+        background-color: #4E6B66;
+        color: #FFFFFF;
+        font-family: 'Inria Serif', serif;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        margin-left: 25%;
+       margin-top: 20px;
+    }
+    label {
+        font-family: 'Inria Serif', serif;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 8px;
+    }
+    #logo_1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 40px;
+    
+    }
+    
+    #logo_2 {
+        font-family: 'Inria Serif', serif;
+        font-weight: normal;
+        color: #FEFEEB;
+        font-size: 40px;
+    
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A5B3AA;
+        height: 70px;
+    
+    }
+    
+     
+}

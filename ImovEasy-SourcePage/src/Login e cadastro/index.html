@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="/modules/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/modules/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <p id="logo_1">Imov</p>
+        <p id="logo_2">Easy</p>
+    </header>
+    <div class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" id=icon-menu>   <i class="menu-icon fas fa-bars"></i>
+
+            Menu</label>
+        <nav id="menu">
+            <ul>
+                <li><a href="">Inicio</a> </li>
+                <li><a href="">Imóveis</a></li>
+                <li><a href="/src/Página de Perfil/index-perfil.html">Meu Perfil</a></li>
+                <li><a href="/src/contato/index-contato.html">Contato</a></li>
+                <li><a href="/src/Login e cadastro/index.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <section class="login">
+            <h2>Login</h2>
+            <div class="form1">
+                <form action="">
+                    <label class="label" for="">Usuário:</label>
+                    <input class="caixa1" type="text">
+                    <label class="label" for="">Senha:</label>
+                    <input class="caixa1" type="password">
+                    <input id="botão1" value="Entrar" type="submit">
+                </form> 
+            </div>
+        </section>
+        <div class="line-center"></div>
+        <section class="cadastro">
+            <h2>Cadastro</h2>
+            <div class="form2">
+                <img class="imgcadastro" src="/assets/imagem de cadastro.png" alt="">
+                <form action="">
+                    <label class="label" for="">Nome de usuário:</label>
+                    <input class="caixa2" type="text">
+                    <label class="label" for="">Número de telefone:</label>
+                    <input class="caixa2" type="number">
+                    <label class="label" for="">E-mail para contato:</label>
+                    <input class="caixa2" type="email" >
+                    <label class="label" for="">Crie uma senha:</label>
+                    <input class="caixa2" type="text" >
+                    <label class="label" for="">Insira ela novamente:</label>
+                    <input class="caixa2" type="text" >
+                    <input id="botão2" value="Criar conta" type="submit">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Imoveasy - Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

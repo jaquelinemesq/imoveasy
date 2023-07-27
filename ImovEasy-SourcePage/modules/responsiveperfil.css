@@ -1,0 +1,271 @@
+@media (max-width: 1200px) {
+   
+    .container-father {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-repeat: repeat;
+    }
+
+
+    nav {
+        position: relative;
+        margin-top: 35px;
+        margin-left: -15px;
+        background-color: #FFFFFF;
+
+    }
+
+    nav ul {
+        position: relative;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu {
+        position: relative;
+        width: auto;
+        height: 40px;
+        margin: 15px 0px 0 10px;
+        height: 60px;
+        background-color: #FEFEEB;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: #000;
+    }
+
+    .menu-icon {
+        font-size: 24px;
+        /* Tamanho do ícone */
+        cursor: pointer;
+        /* Altera o cursor para indicar que é clicável */
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu-toggle:checked~#menu {
+        display: block;
+        text-decoration: none;
+        color: #000;
+    }
+
+    #icon-menu {
+        color: #000;
+        margin: 5px 5px;
+        width: auto;
+
+        
+        }
+
+    ul {
+        background-color: #fff;
+        list-style: none;
+        padding: 10px;
+        z-index: 2;
+        border: solid 1px #626262;
+        border-radius: 2rem;
+        box-shadow: 0 4px 6px rgba(55, 53, 53, 0.357);
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .perfil {
+        position: relative;
+        margin: 25px;
+        width: 380px;
+        height: 724px;
+        background-color: #A5B3AA;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 1rem;
+        float: left;
+    }
+    .lista{
+    
+        width: auto;
+        height: 441px;
+        background-color: #A5B3AA;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-radius: 1rem;
+    
+    }
+    .imoveis{
+        width: auto;
+        height: 390px;
+        background-color: #E8E2CD;
+        border: none;
+        border-radius: 1rem;
+        margin: 20px;
+    }
+    .financeiro{
+        margin: 0px 0px 10px 0px;
+        position: relative;
+        width: auto;
+        height: 187px;
+        background-color: #A5B3AA;
+        display: flex;
+        border: none;
+        border-radius: 1rem;
+    }
+
+}
+@media (max-width: 900){
+    
+    .financeiro{
+        margin: 0px 0px 10px 0px;
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: #A5B3AA;
+        display: flex;
+        border: none;
+        border-radius: 1rem;
+        flex-direction: column;
+    }
+    .lista{
+    
+        width: auto;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        background-color: #A5B3AA;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-radius: 1rem;
+    
+    }
+    .imoveis{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: #E8E2CD;
+        border: none;
+        border-radius: 1rem;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .financeiro{
+        margin: 0px 0px 10px 0px;
+        position: relative;
+        width: auto;
+        height: auto;
+        background-color: #A5B3AA;
+        display: flex;
+        border: none;
+        border-radius: 1rem;
+        flex-direction: column;
+    }
+    .lista{
+    
+        width: auto;
+        height: auto;
+        position: relative;
+        flex-direction: column;
+        background-color: #A5B3AA;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        border-radius: 1rem;
+    
+    }
+    .perfil {
+        position: relative;
+        margin: 25px;
+        width: auto;
+        height: auto;
+        background-color: #A5B3AA;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 1rem;
+        float: left;
+    }
+    .input-internal-profile {
+        border: none;
+        color: #000;
+        border-radius: 15px;
+        height: 30px;
+        width: 100%;
+        padding: 15px;
+    }
+    .inputs-profile {
+        margin: 55px 55px 5px 55px;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #000;
+        width: 85%;
+    
+    
+    }
+    .profile-img {
+        height: 200px;
+        width: 200px;
+    }
+    .imoveis{
+        width: auto;
+        height: 390px;
+        background-color: #E8E2CD;
+        border: none;
+        border-radius: 1rem;
+        margin: 20px;
+    }
+    .menu {
+        position: relative;
+        width: auto;
+        height: 40px;
+        margin: 15px 0px 0 10px;
+
+    }
+    .imov {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 40px;
+    
+    }
+    
+    .easy {
+        font-family: 'Inria Serif', serif;
+        font-weight: normal;
+        color: #FEFEEB;
+        font-size: 40px;
+    
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #A5B3AA;
+        height: 70px;
+    
+    }
+    
+     
+}
