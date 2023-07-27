@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #FAFAFA;
+}
+
+header {
+  background-color: #A5B3AA;
+  padding: 20px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.imov {
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.easy {
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Inria Serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav {
+  background-color: #FAFAFA;
+  padding: 10px 20px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu li a {
+  color: #4E3F30;
+  text-decoration: none;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%; /* Largura máxima para ocupar a tela inteira */
+  position: relative;
+}
+
+.carousel img {
+  width: 493px;
+  height: 458px;
+  height: auto; /* Altura ajusta proporcionalmente à largura */
+  margin-right: 8px; /* Espaço entre as imagens */
+  transition: transform 0.3s ease-in-out; /* Adiciona transição suave ao redimensionar */
+}
+
+.carousel img:last-child {
+  margin-right: 0; /* Remover o espaço à direita para a última imagem */
+  margin-left: 0;
+}
+
+/* Adiciona o efeito de aumento da imagem no hover */
+.carousel img:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/*posicionar toda a div*/
+.valor {
+  display: flex;
+  position: absolute;
+  top: 560px;
+  right: 100px;
+  bottom: 100%;
+  z-index: 1;
+}
+/*estilizar*/
+.valor span {
+  color: #FFF;
+  font-family: Arial;
+  font-style: normal;
+}
+
+.valor p {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+}
+
+/*estilizar imagens*/
+#valor-retangulo {
+  width: 516px;
+  height: 316px;
+}
+
+#valor-compartilhar {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 48px;
+  top: 29px;
+}
+
+#valor-favoritar {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 91px;
+  top: 29px;
+}
+
+/*até aqui*/
+
+#reais {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 30px;
+  font-style: normal;
+  position: absolute;
+  left: 84px;
+  top: 75px;
+}
+
+#valor-reais {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 140px;
+  top: 59px;
+  right: 160px;
+  bottom: 150px;
+}
+
+#por-mes {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 173px;
+  right: 48px;
+  bottom: 112px;
+  left: 322px;
+}
+
+/*posicionamento da descrição*/
+#descricao { 
+  position: absolute;
+  left: 37px;
+  bottom: 30px;
+  top: 211px;
+  right: 37px;
+}
+
+
+/* Estilos para a seção de título e características */
+.titulo,
+.caracteristicas {
+  text-align: left;
+  margin: 100px; /* Espaçamento da página */
+}
+
+/* Estilo para o título principal */
+.titulo h1 {
+  color: #4E6B66;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 46px; /* Espaçamento abaixo do título h1 */
+}
+
+/* Estilo para o subtitulo no título */
+.titulo h2 {
+  color: #4E6B66;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+/* Estilo para o parágrafo no título */
+.titulo p {
+  color: #000;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+/* Espaçamento entre os elementos de imagem no título */
+.titulo img {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+
+/* Estilos para as características */
+.caracteristicas h2 {
+  color: #4E6B66;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  
+}
+
+.caracteristicas li {
+  color: #000;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Espaçamento entre os elementos dentro da seção de características */
+.caracteristicas ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a imagem favoritar */
+.botao-favoritos img[alt="favoritar"] {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 25px;
+  top: 13px;
+  right: 352px;
+  bottom: 15px;
+}
+
+.botao-favoritos {
+  position: relative;
+  width: 407px;
+  height: 58px;
+  border-radius: 10px;
+  background: #A5B3AA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-right: 160px; /* Espaçamento entre os contêineres */
+}
+.imagem-favoritar {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 25px;
+  top: 13px; /* Ajuste esse valor para posicionar a imagem favoritar conforme desejado */
+}
+
+.texto-salvar {
+  position: absolute;
+  right: 17px;
+  top: 13px; /* Ajuste esse valor para alinhar o texto com a imagem favoritar */
+  color: #000;
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.botao-compartilhar {
+  position: relative;
+  width: 407px;
+  height: 58px;
+  border-radius: 10px;
+  background: #A5B3AA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-left: 160px; /* Espaçamento entre os contêineres */
+}
+
+.imagem-compartilhar {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 25px;
+  top: 13px;
+  right: 352px;
+  bottom: 15px; /* Ajuste esse valor para posicionar a imagem compartilhar conforme desejado */
+}
+
+.texto-enviar {
+  position: absolute;
+  right: 17px;
+  top: 13px; /* Ajuste esse valor para alinhar o texto com a imagem favoritar */
+  color: #000;
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.botao-favoritos, .botao-compartilhar {
+  display: inline-block;
+  margin: center;
+  margin-left: 160px; /* Espaçamento entre os contêineres */
+  margin-right: 160px; /* Espaçamento entre os contêineres */
+
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px; /* Opcional: adicione margem superior para ajustar o posicionamento vertical */
+}
+
+.mapa h2 {
+  color: #4E6B66;
+  text-align: center;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mapa img {
+  width: 762px;
+  height: auto;
+  margin-top: 25px;
+}
+
+.redessociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redessociais > div {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.redessociais-imagem {
+  vertical-align: middle;
+}
+
+.redessociais ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.rodape {
+  text-align: center;
+  margin: 50px;
+}
+
+.rodape h2 {
+  color: #4E6B66;
+  font-family: Arial;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+footer {
+  background-color: #A5B3AA;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-rodape {
+  color: #000;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Regras de mídia para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+  .titulo h1 {
+    font-size: 36px;
+    margin-bottom: 30px; /* Reduzindo o espaçamento para telas menores */
+  }
+  
+  /* Posicionando o container .valor abaixo do carousel */
+  .valor {
+    position: static;
+    margin-top: 30px; /* Espaçamento entre o carousel e o .valor */
+  }
+}
+/* Dispositivos com largura máxima de 768px */
+/* Regras de mídia para dispositivos com largura máxima de 1024px */
+@media (max-width: 1024px) {
+  .carousel {
+    max-width: 90%;
+    margin: 0 auto; /* Centralizar o carrossel */
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .carousel-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .carousel-prev {
+    left: 10px;
+  }
+
+  .carousel-next {
+    right: 10px;
+  }
+}
+
+/* Regras de mídia para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .carousel-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .carousel-prev {
+    left: 5px;
+  }
+
+  .carousel-next {
+    right: 5px;
+  }
+
+  .botao-favoritos,
+  .botao-compartilhar {
+    margin: 10px auto;
+  }
+}
+
+/* Regras de mídia para dispositivos com largura máxima de 480px */
+@media (max-width: 480px) {
+  .carousel {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .carousel-button {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+  }
+
+  .carousel-prev {
+    left: 3px;
+  }
+
+  .carousel-next {
+    right: 3px;
+  }
+
+  .botao-favoritos,
+  .botao-compartilhar {
+    margin: 10px auto;
+  }
+}
+
+
+
+.fale-conosco  {
+  display: none; /* Esconde o .fale-conosco e outros elementos no modo responsivo */
+}
+
+/* Estilos para o .fale-conosco apenas em telas maiores (por exemplo, acima de 768px) */
+@media screen and (min-width: 769px) {
+  .fale-conosco {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    bottom: 100%;
+    left: 900px;
+    z-index: 1;
+  }
+
+  .fale-conosco span {
+    display: flex;
+    position: absolute;
+    right: 100px;
+    bottom: 100%;
+    left: 900px;
+    z-index: 1;
+  }
+
+  #caixa-faleconosco {
+    display: flex;
+    position: absolute;
+    top: 900px;
+    right: 0px;
+    bottom: 100%;
+    width: 516px;
+    height: 606px;
+    z-index: 0;
+  }
+
+  #entre-em-contato {
+    bottom: 100%;
+    right: 120px;
+    top: 950px;
+  }
+
+  #whatsapp {
+    bottom: 100%;
+    right: 50px;
+    top: 1040px;
+  }
+
+  #botao-opcoes1 {
+    bottom: 100%;
+    right: 50px;
+    top: 1140px;
+  }
+
+  #botao-opcoes2 {
+    bottom: 100%;
+    right: 50px;
+    top: 1240px;
+  }
+
+  #outras-pessoas {
+    bottom: 56%;
+    right: 80px;
+    top: 1340px;
+  }
+
+  .fale-conosco img {
+    display: flex;
+    position: absolute;
+    width: 407px;
+    height: 58px;
+    right: 100px;
+    bottom: 100%;
+  }
+}
+
+
+/* Regras de mídia para tornar o layout responsivo */
+@media screen and (max-width: 600px) {
+  .mapa {
+    font-size: 30px;
+  }
+}
+
